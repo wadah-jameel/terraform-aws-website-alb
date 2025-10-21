@@ -1,4 +1,4 @@
-# Static Website Deployment with Terraform and AWS
+# Static Website Deployment with Terraform and AWS+ALB
 
 ## 🏗️ Architecture Overview
 Brief description of your infrastructure setup.
