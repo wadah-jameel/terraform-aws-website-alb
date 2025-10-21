@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Static Website</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>My Website</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to My Static Website</h2>
+                <p>Deployed on AWS EC2 with Terraform and Load Balanced with ALB</p>
+                <div class="server-info">
+                    <p><strong>Server:</strong> <span id="server-id">Loading...</span></p>
+                    <p><strong>Region:</strong> <span id="region">Loading...</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About This Deployment</h2>
+                <p>This website is served by EC2 instances behind an Application Load Balancer (ALB) in AWS.</p>
+                <ul>
+                    <li>Infrastructure managed with Terraform</li>
+                    <li>Multiple EC2 instances for high availability</li>
+                    <li>Auto Scaling Group for resilience</li>
+                    <li>Application Load Balancer for traffic distribution</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>🚀 Fast Deployment</h3>
+                        <p>Quick deployment using Terraform automation</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🔧 Scalable</h3>
+                        <p>Auto Scaling Group adjusts to traffic demands</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🛡️ Reliable</h3>
+                        <p>Multiple availability zones for high availability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 My Static Website. Deployed with ❤️ using Terraform and AWS.</p>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

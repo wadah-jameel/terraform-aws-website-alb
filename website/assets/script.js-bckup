@@ -1,0 +1,29 @@
+// Get server information from EC2 metadata
+document.addEventListener('DOMContentLoaded', function() {
+    // Get instance metadata
+    fetch('/server-info')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('server-id').textContent = data.instanceId || 'Unknown';
+            document.getElementById('region').textContent = data.region || 'Unknown';
+        })
+        .catch(error => {
+            console.log('Could not fetch server info:', error);
+            document.getElementById('server-id').textContent = 'Static Server';
+            document.getElementById('region').textContent = 'AWS';
+        });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});

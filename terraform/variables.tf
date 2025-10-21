@@ -20,3 +20,19 @@ variable "instance_type" {
     error_message = "Instance type must be t3.micro, t3.small, or t3.medium."
   }
 }
+
+
+
+# Add these variables to your existing variables.tf
+
+variable "enable_nat_gateway" {
+  description = "Enable NAT Gateway for private subnets (costs extra)"
+  type        = bool
+  default     = false
+}
+
+variable "key_name" {
+  description = "EC2 Key Pair name for SSH access"
+  type        = string
+  default     = ""
+}
