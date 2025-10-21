@@ -54,9 +54,9 @@ chmod +x scripts/deploy.sh
 # (This step depends on your specific setup)
 ```
 
-```bash
+
 ## Step 7: Add Examples and Use Cases
-```
+
 
 ### 7.1 Create Examples Directory
 ```markdown
@@ -76,9 +76,9 @@ Complete setup with:
 Lightweight setup for development
 ```
 
-```bash
+
 ## Step 9: Add Monitoring and Maintenance
-```
+
 
 ### 9.1 Document Monitoring
 ```markdown
