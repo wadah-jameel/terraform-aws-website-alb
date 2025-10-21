@@ -1,4 +1,4 @@
-# Static Website Deployment with Terraform and AWS
+# Static Website Deployment with Terraform and AWS+ALB
 
 ## 🏗️ Architecture Overview
 Brief description of your infrastructure setup.
@@ -31,7 +31,7 @@ Guidelines for contributors
 ```bash
 git clone https://github.com/yourusername/terraform-aws-website.git
 cd terraform-aws-website
-
+```
 
 ## Step 2: Configure Variables
 
@@ -40,22 +40,23 @@ Create terraform/terraform.tfvars:
 ```bash
 project_name = "my-website"
 domain_name  = "example.com"
-
+```
 
 ### Step 3: Deploy Infrastructure
 ```bash
 chmod +x scripts/deploy.sh
 ./scripts/deploy.sh
-
+```
 
 ### Step 4: Upload Website Content
 ```bash
 # Copy your website files to EC2 instances
 # (This step depends on your specific setup)
+```
 
 
-```bash
 ## Step 7: Add Examples and Use Cases
+
 
 ### 7.1 Create Examples Directory
 ```markdown
@@ -73,9 +74,11 @@ Complete setup with:
 
 ### Development Environment
 Lightweight setup for development
+```
 
-```bash
+
 ## Step 9: Add Monitoring and Maintenance
+
 
 ### 9.1 Document Monitoring
 ```markdown
@@ -96,13 +99,13 @@ Configure CloudWatch alarms for:
 - High error rates
 - Instance failures
 - Performance issues
+```
 
 ### Step 10: Version Control and Releases
 
 10.1 Create Release Process
 
 
-``bash
 ## 🔄 Release Process
 
 ### Semantic Versioning
